@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="myApp">
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +7,18 @@
 	<link rel="stylesheet" href="">
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
 	<script type="text/javascript" src="bootstrap/jquery-2.1.4.min.js"></script>
-	<script type="text/javascript" src="controller.js"></script>
-	<script type="text/javascript" src="clubs.js"></script>
+	<script type="text/javascript" src="bootstrap/js/angular.min.js"></script>
+	<!-- // <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script> -->
+	<script type="text/javascript" src="bootstrap/controller.js"></script>
+	<script type="text/javascript" src="bootstrap/clubs.js"></script>
 </head>
-<body>
-	
+<body ng-controller="yelpController">
+	<div class="container">
+		<div class="row">
+			<div class="yelp-response" ng-repeat="reponse in reponses">
+			{{response.businesses.name}}
+			</div>
+		</div>
+	</div>
 </body>
 </html>
