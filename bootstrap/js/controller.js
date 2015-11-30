@@ -6,8 +6,8 @@ myApp.controller('yelpController', function ($scope, $http){
 	var url = "bootstrap/js/clubs.js"
 
 	$http.get(url).success(function(data){
-		$scope.data = data.responses;
-		console.log($scope.data);
-		
+		$scope.data = data.businesses
+		console.log($scope.data[8]);
+
 	});
 });

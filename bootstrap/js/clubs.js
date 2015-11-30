@@ -1,5 +1,5 @@
 
-$scope.responses = [
+
 {
     "region": {
         "span": {
@@ -1019,4 +1019,3 @@ $scope.responses = [
         }
     ]
 }
-]
