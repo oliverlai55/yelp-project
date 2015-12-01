@@ -15,9 +15,13 @@
 <body ng-controller="yelpController">
 	<div class="container">
 		<div class="row">
-			<h2>Yelp Reponses</h2>
+			<h2>Yelp Search</h2>
+			<form>
+				<input type="text" placeholder="Search">
+				<button type="button" class="btn btn-primary" ng-click="getYelp()">Search!</button>
+			</form>
 			<div class="yelp-response" ng-repeat="response in data">
-			{{response.name}}
+				{{response.name}}
 			</div>
 		</div>
 	</div>
