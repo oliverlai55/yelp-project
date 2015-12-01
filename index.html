@@ -8,16 +8,17 @@
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
 	
 	<!-- // <script type="text/javascript" src="bootstrap/js/angular.min.js"></script> -->
-	
-	<script type="text/javascript" src="bootstrap/js/instafeed.min.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-git2.min.js"></script>
+	<script type="text/javascript" src="instafeed.js/instafeed.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
 	<script type="text/javascript" src="bootstrap/js/controller.js"></script>
-	<script type="text/javascript" src="bootstrap/js/clubs.js"></script>
-	<script type="text/javascript" src="bootstrap/js/club-images.js"></script>
+
+	<script type="text/javascript" src="bootstrap/js/club.js"></script>
+
 
 </head>
-<body ng-controller="yelpController">
-	<div class="container">
+<body>
+	<div ng-controller="yelpController" class="container">
 		<div class="row">
 			<h2>Venue Search</h2>
 			<form>
@@ -39,16 +40,15 @@
 				<div class="yelp-text">What People Are Saying: "{{response.snippet_text}}"</div>
 			</div>
 
-			<iframe id="element" src=""></iframe>
-			<iframe src="http://snapwidget.com/sc/?h=dG5nYXRsYW50YXxpbnwxNTB8MXwxfHxub3w1fG5vbmV8b25TdGFydHx5ZXN8eWVz&ve=011215">
-			</iframe>
-			
-
-
 			
 		</div>
 	</div>
+	<div class="club-images"> 
+		
+	</div>
+
 </body>
+
 
 
 </html>
