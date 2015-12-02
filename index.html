@@ -24,12 +24,14 @@
 			<form>
 				<input type="text" placeholder="Search">
 				<input type="text" placeholder="Category">
-				<button type="button" class="btn btn-primary" ng-click="getYelp()">Search!</button>
+				<button type="button" id="search-button" class="btn btn-primary" ng-click="getYelp()">Search!</button>
 			</form>
 			<div class="yelp-response" ng-repeat="response in data">
 				<div class="yelp-name">
 					<h3>{{response.name}}</h3>
 				</div>
+				
+				<div ng-blind-html="renderHtml(body)"></div>
 				<img src="{{response.image_url}}">
 				<img src="{{response.rating_img_url}}">
 				<div class="yelp-phone">{{response.phone}}</div>
@@ -39,13 +41,14 @@
 				</div>
 				<div class="yelp-text">What People Are Saying: "{{response.snippet_text}}"</div>
 			</div>
+			<div id="club-images"></div>
+			<div id="club-images2"></div>
 
 			
 		</div>
 	</div>
-	<div class="club-images"> 
-		
-	</div>
+
+
 
 </body>
 
