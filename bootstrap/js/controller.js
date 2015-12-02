@@ -24,8 +24,10 @@ $(document).ready(function(){
 		$('#club-images').html(TngHtml);
 		$('#club-images2').html(GoldRoomHtml);
 
-		vineHtml= '<iframe src="https://vine.co/v/O6nArUZunmt/embed/simple" width="500" height="500" frameborder="0"></iframe>';
+		vineHtml= '<iframe src="https://vine.co/v/O6nArUZunmt/embed/simple" width="230" height="230" frameborder="0"></iframe>';
+		vineHtml2 = '<iframe src="https://vine.co/v/e1rXZE07XED/embed/simple" width="230" height="230" frameborder="0"></iframe>';
 		$('#vine-feed').html(vineHtml);
+		$('#vine-feed2').html(vineHtml2);
 		<!-- 4:3 aspect ratio -->
 		
 		videoHtml = '<div class="embed-responsive embed-responsive-4by3"><iframe class="embed-responsive-item" src="https://www.youtube.com/embed/vzis32nUNEo"></iframe></div>';
