@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title></title>
-	<link rel="stylesheet" href="">
+	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">	
 	<!-- // <script type="text/javascript" src="bootstrap/js/angular.min.js"></script> -->
 	<script type="text/javascript" src="https://code.jquery.com/jquery-git2.min.js"></script>
@@ -20,8 +20,8 @@
 		<div ng-controller="yelpController" class="container">
 			<div class="row">
 				<form class="col-sm-12">
-					<div class = "jumbotron">
-						<h1>Ready To Party?</h1>
+					<div class = "jumbotron" style="background-size: 100%;">
+						<h1>Night Out?</h1>
 						<h2>Venue Search</h2>
 						<input type="text" placeholder="Insert Venue">
 						<input type="text" placeholder="Category">
@@ -29,7 +29,7 @@
 					</div>
 				</form>
 				<div class="yelp-response col-sm-6">
-					<div class="col-sm-12" ng-repeat="response in data">
+					<div class="yelp-col col-sm-12" ng-repeat="response in data">
 						<div class="yelp-name col-sm-12">
 							<h3>{{response.name}}</h3>
 						</div>
