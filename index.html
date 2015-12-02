@@ -5,8 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title></title>
 	<link rel="stylesheet" href="">
-	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
-	
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">	
 	<!-- // <script type="text/javascript" src="bootstrap/js/angular.min.js"></script> -->
 	<script type="text/javascript" src="https://code.jquery.com/jquery-git2.min.js"></script>
 	<script type="text/javascript" src="instafeed.js/instafeed.min.js"></script>
@@ -18,39 +17,47 @@
 
 </head>
 <body>
-	<div ng-controller="yelpController" class="container">
-		<div class="row">
-			<h2>Venue Search</h2>
-			<form>
-				<input type="text" placeholder="Search">
-				<input type="text" placeholder="Category">
-				<button type="button" id="search-button" class="btn btn-primary" ng-click="getYelp()">Search!</button>
-			</form>
-			<div class="col-sm-12">
-				<div class="yelp-response col-sm-6" ng-repeat="response in data">
-					<div class="yelp-name">
-						<h3>{{response.name}}</h3>
+		<div ng-controller="yelpController" class="container">
+			<div class="row">
+				<form class="col-sm-12">
+					<div class = "jumbotron">
+						<h1>Ready To Party?</h1>
+						<h2>Venue Search</h2>
+						<input type="text" placeholder="Insert Venue">
+						<input type="text" placeholder="Category">
+						<button type="button" id="search-button" class="btn btn-primary" ng-click="getYelp()">Search!</button>
 					</div>
-					
-					<div ng-blind-html="renderHtml(body)"></div>
-					<img src="{{response.image_url}}">
-					<img src="{{response.rating_img_url}}">
-					<div class="yelp-phone">{{response.phone}}</div>
-					<div class="yelp-address">{{response.location.display_address[0]}}
-						<br>{{response.location.display_address[1]}}</br>
-						{{response.location.display_address[2]}}
+				</form>
+				<div class="yelp-response col-sm-6">
+					<div class="col-sm-12" ng-repeat="response in data">
+						<div class="yelp-name col-sm-12">
+							<h3>{{response.name}}</h3>
+						</div>
+						<img class="col-sm-2"src="{{response.image_url}}">
+						<img class="col-sm-2"src="{{response.rating_img_url}}">
+						<div class="review-numbers col-sm-2">{{response.review_count}} Reviews
+						</div>
+						<div class="col-sm-6">
+							<div class="yelp-phone col-sm-12">{{response.phone}}</div>
+							<div class="yelp-address col-sm-12">{{response.location.display_address[0]}}
+								<br>{{response.location.display_address[1]}}</br>
+								{{response.location.display_address[2]}}
+							</div>
+						</div>
+						<div class="yelp-text col-sm-12">What People Are Saying: "{{response.snippet_text}}"</div>
 					</div>
-					<div class="yelp-text">What People Are Saying: "{{response.snippet_text}}"</div>
+
 				</div>
-				<div class="col-sm-6">
+				<div class="iframe-pics col-sm-6">
+					<div id="recent-pictures"></div>
 					<div id="club-images"></div>
 					<div id="club-images2"></div>
+					<div id="club-video"></div>
+					<div id="club-video2"></div>
 				</div>
-			</div>
 
-			
+			</div>
 		</div>
-	</div>
 
 
 
