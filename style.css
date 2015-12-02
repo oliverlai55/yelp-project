@@ -1,6 +1,7 @@
 .jumbotron{
 	background: url('party.png') no-repeat center center;
 
+
 }
 
 .container{
@@ -9,6 +10,11 @@
 .yelp-col{
 	background-color: white;
 }
+
+.review-numbers{
+	font-size:10px;
+}
+
 #club-images{
 	margin-bottom: 5%;
 }
