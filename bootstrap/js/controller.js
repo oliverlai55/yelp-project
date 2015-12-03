@@ -1,5 +1,5 @@
 
-
+// access_token=245498639.4b9e596.2da3c6ce120146a284a48e7ee0ec050b
 var myApp = angular.module('myApp', []);
 
 myApp.controller('yelpController', function ($scope, $http, $sce){
