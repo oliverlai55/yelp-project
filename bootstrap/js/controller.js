@@ -20,7 +20,7 @@ $(document).ready(function(){
 		
 		TngHtml = '<iframe src="http://snapwidget.com/sc/?h=dG5nYXRsYW50YXxpbnwxNTB8M3wzfHxub3w1fG5vbmV8b25TdGFydHx5ZXN8bm8=&ve=011215" title="Instagram Widget" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="yes" style="border:none; overflow:hidden; width:500px; height:150px"></iframe>'
 		GoldRoomHtml = '<iframe src="http://snapwidget.com/sc/?h=aGF2YW5hYXRsYW50YXxpbnwxNTB8M3wzfHx5ZXN8MjB8bm9uZXxvblN0YXJ0fHllc3xubw==&ve=011215" title="Instagram Widget" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:500px; height:150px"></iframe>'
-		$('#recent-pictures').html('<h3>Recent Pictures and Videos</h3>');
+		$('#recent-pictures').html('<h2>Recent Pictures and Videos</h2>');
 		$('#club-images').html(TngHtml);
 		$('#club-images2').html(GoldRoomHtml);
 
