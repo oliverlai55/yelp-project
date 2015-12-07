@@ -1,7 +1,10 @@
+.navbar-default{
+	margin-left:9.5%;
+	margin-right:9% !important;
+}
+
 .jumbotron{
 	background: url('party.png') no-repeat center center;
-
-
 }
 
 .container{
